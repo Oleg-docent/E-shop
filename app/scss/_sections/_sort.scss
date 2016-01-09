@@ -25,13 +25,13 @@
 
 .sort__left {
 	float: left;
-	width: 50%;
+	width: 60%;
 	line-height: 50px;
 }
 
 .sort__right {
 	float: right;
-	width: 50%;
+	width: 40%;
 	text-align: right;
 }
 
@@ -39,10 +39,12 @@
 	@include inlineblock(middle);
 }
 
+
+
 .sort__view-list {
 	@include clearfix;
-}
 
+}
 .sort__view-item {
 	float: left;
 	border-left: 1px solid $grey;
@@ -57,12 +59,11 @@
 	outline: none !important;
 	text-align: center;
 	line-height: 50px;
-}
 
+}
 
 .sort__view-icon {
 	@include absolute-center;
-	
 }
 
 
@@ -73,23 +74,37 @@ $items: grids, rows, lines;
 @each $item in $items {
 	.sort__view_#{$item} {
 		.sort__view-icon {
+			
+			
 			@include get-sprite($views-map, $item);
 		}
+			
+			
+		
+			
+			
+		
 
 		&:hover {
+			
 			$hover-icon: $item + '-hover';
 
-			.sort__view-icon {
-				@include get-sprite($views-map, $hover-icon);
-			}
+
+			.sort__view-icon{
+			@include get-sprite($views-map, $hover-icon);
 		}
+			
+		
+	  }
 
 		&.active {
 			$hover-icon: $item + '-hover';
 
-			.sort__view-icon {
-				@include get-sprite($views-map, $hover-icon);
-			}
+			.sort__view-icon{
+			@include get-sprite($views-map, $hover-icon);
+		  }
+			
 		}
-	}
-}
+	 }
+   }
+ 

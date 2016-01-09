@@ -9,7 +9,7 @@ block content
 			.main-title
 				| Мобильные телефоны
 			.main-content
-
+				
 				include ../_common/_sidebar
 
 				.content
@@ -30,7 +30,7 @@ block content
 								ul.sort__view-list
 									- var items = ['rows', 'grids', 'lines']
 									each item in items
-										li(class="sort__view-item sort__view-" + item data-view= item)
+										li(class="sort__view-item sort__view_" + item data-view= item)
 											a(href="#").sort__view-link
 												.sort__view-icon
 					.products
@@ -99,7 +99,7 @@ block content
 								li.pagination__item
 									a(href="#").pagination__link
 										.pagination__mark= i
-							li.pagination__item.pagination__item_prev
+							li.pagination__item.pagination__item_next
 								a(href="#").pagination__link
 									.pagination__mark.icon-next
 			.attension

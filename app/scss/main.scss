@@ -20,6 +20,10 @@
 
 $misc-sprite: sprite-map('icons/_misc/*.png', $spacing: 70px);
 
+/* --------- views icons sprite --------- */
+
+$views-map: sprite-map('icons/views/*.png', $spacing: 70px);
+
 /* --------- common colors --------- */
 
 $black: #333;

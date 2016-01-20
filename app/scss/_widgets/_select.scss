@@ -38,26 +38,19 @@ $select-tr-map: sprite-map('icons/select-tr/*.png', $spacing: 70px);
 		bottom: 0 none;
 		@include box-shadow(0 0 5px 0 rgba(134, 134, 134, .75));
 		@include border-radius(5px);
-		background: #fff;
-	}
-
-	.select2-results__option {
-		background: #fff!important;
+		background: #ffffff;
 		font-size: 14px;
 		line-height: 16px;
 		@include open-sans(light);
 		color: #7f7f7f;
 
-		&:hover {
-			background: #fff;
-			color: #333 !important;
-			@include open-sans(semibold);
-
-		}
 
 		&.select2-results__option--highlighted {
 			color: #333 !important;
-			background: #ddd !important;
+			@include open-sans(semibold);
 		}
 	}
 }
+	
+
+		
